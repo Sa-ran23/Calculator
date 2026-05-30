@@ -1,0 +1,141 @@
+.cal_box{
+    border: 1px solid black;
+    width: 22%;
+    height: 410px;
+    margin: auto;
+    margin-top: 88px;
+    border-radius: 12px;
+    background-color: #100b0b;
+}
+.display{
+    border: 0px solid black;
+    width: 85%;
+    height: 64px;
+    margin: 14px 0px 0px 16px;
+    border-radius: 7px;
+    background-color: #56535326;
+    font-size: 50px;
+    text-align: end;
+    padding-right: 14px;
+    color: white;
+}
+button{
+    width: 59px;
+    height: 43px;
+    margin-left: 9px;
+    margin-top: 19px;
+    border-radius: 7px;
+    border: 1px;
+    color: white;
+    background-color: #56535326;
+}
+button:hover{
+    background-color: #77747426;
+}
+button{
+    cursor: pointer;
+}
+
+/* Responsive Design */
+@media (max-width: 1024px) {
+    .cal_box {
+        width: 35%;
+        height: 420px;
+    }
+}
+
+@media (max-width: 768px) {
+    .cal_box {
+        width: 60%;
+        height: 430px;
+        margin-top: 60px;
+        border-radius: 14px;
+    }
+
+    .display {
+        width: 88%;
+        height: 60px;
+        margin: 14px 0px 0px 12px;
+        font-size: 42px;
+        padding-right: 12px;
+    }
+
+    button {
+        width: 62px;
+        height: 45px;
+        margin-left: 8px;
+        margin-top: 16px;
+        border-radius: 8px;
+        font-size: 16px;
+    }
+}
+
+@media (max-width: 576px) {
+    .cal_box {
+        width: 88%;
+        height: auto;
+        margin: 40px auto;
+        padding: 16px;
+        border-radius: 16px;
+    }
+
+    .display {
+        width: 100%;
+        height: 50px;
+        margin: 0 0 12px 0;
+        font-size: 32px;
+        padding: 0 12px;
+        text-align: right;
+        box-sizing: border-box;
+    }
+
+    .cal_button {
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .first,
+    .second,
+    .third,
+    .four,
+    .five {
+        display: flex;
+        justify-content: space-around;
+        gap: 8px;
+    }
+
+    button {
+        flex: 1;
+        width: auto;
+        height: 48px;
+        margin: 0;
+        border-radius: 10px;
+        font-size: 18px;
+        font-weight: 500;
+    }
+
+    .f_row,
+    .t_row,
+    .fi_row {
+        width: auto;
+    }
+}
+
+@media (max-width: 480px) {
+    .cal_box {
+        width: 92%;
+        margin: 30px auto;
+        padding: 14px;
+    }
+
+    .display {
+        height: 45px;
+        font-size: 28px;
+    }
+
+    button {
+        height: 44px;
+        font-size: 16px;
+    }
+}
